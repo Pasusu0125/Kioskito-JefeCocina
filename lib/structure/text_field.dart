@@ -4,15 +4,15 @@ import 'package:kioskito_jefe_cocina/common/paleta.dart';
 class CampoTexto extends StatelessWidget {
   final String text;
   final Widget icon;
-  final double w;
-  final double h;
+  final double width;
+  final double height;
   final TextAlignVertical direccionText;
   const CampoTexto(
       {super.key,
       required this.text,
       required this.icon,
-      required this.w,
-      required this.h,
+      required this.width,
+      required this.height,
       required this.direccionText});
 
   @override
@@ -25,7 +25,7 @@ class CampoTexto extends StatelessWidget {
           fontFamily: 'Acme',
         ),
         suffixIcon: icon,
-        constraints: BoxConstraints(maxHeight: h, maxWidth: w),
+        constraints: BoxConstraints(maxHeight: height, maxWidth: width),
         filled: true,
         fillColor: blanco,
         enabledBorder: OutlineInputBorder(

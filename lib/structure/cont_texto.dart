@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class ContenedorTexto extends StatelessWidget {
-  final double w;
-  final double h;
+  final double width;
+  final double height;
   final String text;
   final double maxF;
   final double minF;
@@ -12,8 +12,8 @@ class ContenedorTexto extends StatelessWidget {
   final style;
   const ContenedorTexto(
       {super.key,
-      required this.w,
-      required this.h,
+      required this.width,
+      required this.height,
       required this.text,
       required this.maxF,
       required this.minF,
@@ -26,8 +26,8 @@ class ContenedorTexto extends StatelessWidget {
     return Container(
       color: const Color.fromARGB(0, 255, 193, 7),
       alignment: posicionText,
-      width: w,
-      height: h,
+      width: width,
+      height: height,
       child: AutoSizeText(
         text,
         maxLines: maxL,

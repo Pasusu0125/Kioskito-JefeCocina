@@ -6,24 +6,24 @@ import 'package:kioskito_jefe_cocina/common/style.dart';
 //Botón sin icono
 class Btn1 extends StatelessWidget {
   final Widget child;
-  final double w;
-  final double h;
-  final op;
+  final double width;
+  final double height;
+  final VoidCallback onTap;
   const Btn1(
       {super.key,
-      this.op,
+      required this.onTap,
       required this.child,
-      required this.w,
-      required this.h});
+      required this.width,
+      required this.height});
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      minWidth: w,
-      height: h,
+      minWidth: width,
+      height: height,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       color: btn1,
-      onPressed: op,
+      onPressed: onTap,
       child: child,
     );
   }
@@ -32,26 +32,26 @@ class Btn1 extends StatelessWidget {
 //Botón con icono
 class Btn2 extends StatelessWidget {
   final Widget child;
-  final double w;
-  final double h;
-  final op;
+  final double width;
+  final double height;
+  final VoidCallback onTap;
   const Btn2(
       {super.key,
       required this.child,
-      required this.w,
-      required this.h,
-      this.op});
+      required this.width,
+      required this.height,
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      minWidth: w,
-      height: h,
+      minWidth: width,
+      height: height,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
       color: btn2,
-      onPressed: op,
+      onPressed: onTap,
       child: child,
     );
   }

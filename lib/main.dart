@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kioskito_jefe_cocina/pages/disponibilidad_Productos.dart';
-import 'package:kioskito_jefe_cocina/pages/informacion_Pedidos.dart';
-import 'package:kioskito_jefe_cocina/pages/inicio_Sesion.dart';
-import 'package:kioskito_jefe_cocina/pages/pedidos_Aprobados.dart';
+import 'package:kioskito_jefe_cocina/pages/disponibilidad_productos.dart';
+import 'package:kioskito_jefe_cocina/pages/informacion_pedidos.dart';
+import 'package:kioskito_jefe_cocina/pages/inicio_sesion.dart';
+import 'package:kioskito_jefe_cocina/pages/pedidos_aprobados.dart';
 
 void main() {
   runApp(const MyApp());

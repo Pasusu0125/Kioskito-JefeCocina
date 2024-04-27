@@ -16,13 +16,13 @@ class Circulo extends StatelessWidget {
 }
 
 class BtnIconoInfo extends StatelessWidget {
-  final op;
-  const BtnIconoInfo({super.key, this.op});
+  final VoidCallback onTap;
+  const BtnIconoInfo({super.key, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: op,
+      onPressed: onTap,
       icon: Icon(
         Icons.info,
         color: btnIconoInfo,
@@ -32,13 +32,13 @@ class BtnIconoInfo extends StatelessWidget {
 }
 
 class BtnIconoEstado extends StatelessWidget {
-  final op;
-  const BtnIconoEstado({super.key, this.op});
+  final VoidCallback onTap;
+  const BtnIconoEstado({super.key, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: op,
+      onPressed: onTap,
       icon: Icon(
         Icons.soup_kitchen,
         color: btnEstado,
@@ -48,13 +48,13 @@ class BtnIconoEstado extends StatelessWidget {
 }
 
 class BtnIconoAprobar extends StatelessWidget {
-  final op;
-  const BtnIconoAprobar({super.key, this.op});
+  final VoidCallback onTap;
+  const BtnIconoAprobar({super.key, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: op,
+      onPressed: onTap,
       icon: Icon(
         Icons.check_circle,
         color: btnIconoAprobar,
@@ -64,14 +64,15 @@ class BtnIconoAprobar extends StatelessWidget {
 }
 
 class BtnIconoDisponibilidad extends StatelessWidget {
-  final op;
+  final VoidCallback onTap;
   final double size;
-  const BtnIconoDisponibilidad({super.key, this.op, required this.size});
+  const BtnIconoDisponibilidad(
+      {super.key, required this.onTap, required this.size});
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: op,
+      onPressed: onTap,
       icon: Icon(
         Icons.no_food,
         color: btnIconoDisponibilidad,
@@ -82,18 +83,20 @@ class BtnIconoDisponibilidad extends StatelessWidget {
 }
 
 class BtnIconoDisponibilidad2 extends StatelessWidget {
-  final op;
+  final VoidCallback onTap;
 
-  const BtnIconoDisponibilidad2({super.key, this.op,});
+  const BtnIconoDisponibilidad2({
+    super.key,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: op,
+      onPressed: onTap,
       icon: Icon(
         Icons.battery_alert,
         color: btnDisponibilidad,
-      
       ),
     );
   }

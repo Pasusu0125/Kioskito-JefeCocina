@@ -29,8 +29,8 @@ class _InformacionPedidosState extends State<InformacionPedidos> {
                 bottom: MediaQuery.of(context).size.height * 0.1,
               ),
               child: ContenedorTexto(
-                w: MediaQuery.of(context).size.width * 0.8,
-                h: MediaQuery.of(context).size.height * 0.1,
+                width: MediaQuery.of(context).size.width * 0.8,
+                height: MediaQuery.of(context).size.height * 0.1,
                 text: 'Información Pedidos',
                 maxF: 160,
                 minF: 20,
@@ -94,9 +94,9 @@ class _InformacionPedidosState extends State<InformacionPedidos> {
                       right: MediaQuery.of(context).size.width * 0.1,
                       top: MediaQuery.of(context).size.height * 0.18),
                   child: Btn1(
-                    w: MediaQuery.of(context).size.width * 0.1,
-                    h: MediaQuery.of(context).size.height * 0.05,
-                    op: () {
+                    width: MediaQuery.of(context).size.width * 0.1,
+                    height: MediaQuery.of(context).size.height * 0.05,
+                    onTap: () {
                       Navigator.pushNamed(context, '/pedidosAprobados');
                     },
                     child: const TextoBotones(text: 'Volver'),

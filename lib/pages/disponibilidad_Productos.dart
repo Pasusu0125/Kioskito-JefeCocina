@@ -34,8 +34,8 @@ class _DisponibilidadProductosState extends State<DisponibilidadProductos> {
                   bottom: MediaQuery.of(context).size.height * 0.1,
                 ),
                 child: ContenedorTexto(
-                  w: MediaQuery.of(context).size.width * 0.5,
-                  h: MediaQuery.of(context).size.height * 0.1,
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  height: MediaQuery.of(context).size.height * 0.1,
                   text: 'Disponibilidad Productos',
                   maxF: 160,
                   minF: 20,
@@ -78,7 +78,7 @@ class _DisponibilidadProductosState extends State<DisponibilidadProductos> {
                           Container(
                             alignment: Alignment.center,
                             child: BtnIconoDisponibilidad2(
-                              op: () {},
+                              onTap: () {},
                             ),
                           ),
                         ),
@@ -95,9 +95,9 @@ class _DisponibilidadProductosState extends State<DisponibilidadProductos> {
                         right: MediaQuery.of(context).size.width * 0.1,
                         top: MediaQuery.of(context).size.height * 0.18),
                     child: Btn1(
-                      w: MediaQuery.of(context).size.width * 0.1,
-                      h: MediaQuery.of(context).size.height * 0.05,
-                      op: () {
+                      width: MediaQuery.of(context).size.width * 0.1,
+                      height: MediaQuery.of(context).size.height * 0.05,
+                      onTap: () {
                         Navigator.pushNamed(context, '/pedidosAprobados');
                       },
                       child: const TextoBotones(text: 'Volver'),
